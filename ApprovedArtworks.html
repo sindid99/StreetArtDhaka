@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Approved Artworks</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex min-h-screen">
+  <!-- Sidebar -->
+  <nav class="w-64 bg-white border-r p-6">
+    <h2 class="text-2xl font-bold text-green-600 mb-8">StreetArt Dhaka</h2>
+    <ul class="space-y-4 text-gray-700">
+      <li><a href="#" class="hover:underline">Dashboard</a></li>
+      <li><a href="#" class="hover:underline">Suggestions</a></li>
+      <li><a href="#" class="hover:underline">Design Voting</a></li>
+      <li class="font-semibold"><a href="#" class="text-green-600">Approved Artworks</a></li>
+      <li><a href="#" class="hover:underline">Location Map</a></li>
+      <li><a href="#" class="hover:underline">User Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8">
+    <h1 class="text-3xl font-semibold mb-6">Approved Artworks</h1>
+
+    <!-- Search -->
+    <div class="mb-6">
+      <input
+        type="search"
+        placeholder="Search artworks…"
+        class="w-full max-w-md p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+      />
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <!-- Local image file: assets/artworks/colorful-nature.jpg -->
+        <img
+          src="D:\StreetArt Dhaka\image\natural.jpg"
+          alt="Colorful Nature Mural"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Colorful Nature Mural</h3>
+          <p class="text-sm text-gray-500">Location: Dhanmondi Wall</p>
+          <p class="text-sm text-gray-500">Artist: Jane Doe</p>
+          <p class="text-xs text-gray-400 mt-1">Approved: 2025-04-20</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <!-- Local image file: assets/artworks/graffiti-style-piece.jpg -->
+        <img
+          src="D:\StreetArt Dhaka\image\grafiti.jpg"
+          alt="Graffiti Style Piece"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Graffiti Style Piece</h3>
+          <p class="text-sm text-gray-500">Location: Uttara Flyover</p>
+          <p class="text-sm text-gray-500">Artist: John Smith</p>
+          <p class="text-xs text-gray-400 mt-1">Approved: 2025-04-18</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <!-- Local image file: assets/artworks/kids-art-wall.jpg -->
+        <img
+          src="D:\StreetArt Dhaka\image\kids.jpg"
+          alt="Kids Art Wall"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Kids Art Wall</h3>
+          <p class="text-sm text-gray-500">Location: Gulshan Park</p>
+          <p class="text-sm text-gray-500">Artist: Community Collective</p>
+          <p class="text-xs text-gray-400 mt-1">Approved: 2025-04-15</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

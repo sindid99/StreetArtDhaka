@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetArt Dhaka Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-md">
+            <div class="p-6 text-2xl font-bold text-green-600">StreetArt Dhaka</div>
+            <nav class="px-4">
+                <ul>
+                    <li class="py-2 text-green-600 font-semibold">Dashboard</li>
+                    <li class="py-2">Suggestions</li>
+                    <li class="py-2">Design Voting</li>
+                    <li class="py-2">Approved Artworks</li>
+                    <li class="py-2">Location Map</li>
+                    <li class="py-2">User Feedback</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
+                <p class="text-gray-500">Welcome to StreetArt Dhaka Admin Panel</p>
+            </header>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div class="bg-white shadow rounded-lg p-4">
+                    <p class="text-gray-600">Today's Suggestions</p>
+                    <p class="text-2xl font-bold">123</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <p class="text-gray-600">Today's Votes</p>
+                    <p class="text-2xl font-bold">456</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <p class="text-gray-600">New Artworks Approved</p>
+                    <p class="text-2xl font-bold">12</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <p class="text-gray-600">Total Locations</p>
+                    <p class="text-2xl font-bold">87</p>
+                </div>
+            </div>
+
+            <!-- Graph/Charts placeholder -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <h2 class="text-xl font-semibold mb-2">Voting Trends</h2>
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                        Voting Chart Placeholder
+                    </div>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <h2 class="text-xl font-semibold mb-2">Suggestions Heatmap</h2>
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                        Map Placeholder
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Users / Feedback -->
+            <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <h2 class="text-xl font-semibold mb-2">New User Suggestions</h2>
+                    <ul class="text-gray-700 divide-y divide-gray-200">
+                        <li class="py-2">Dhanmondi Wall - Colorful Nature Theme</li>
+                        <li class="py-2">Uttara Flyover - Graffiti Style</li>
+                        <li class="py-2">Gulshan Park - Kids Art Wall</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <h2 class="text-xl font-semibold mb-2">Recent Feedback</h2>
+                    <ul class="text-gray-700 divide-y divide-gray-200">
+                        <li class="py-2">"Loved the community voting feature!"</li>
+                        <li class="py-2">"Can we suggest designs too?"</li>
+                        <li class="py-2">"Hope to see this expand to more cities."</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
